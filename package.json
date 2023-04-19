@@ -1,9 +1,13 @@
 {
   "name": "8-puzzle-solver",
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "build": "./node_modules/.bin/gulp",
     "build:watch": "./node_modules/.bin/gulp watch",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "resolutions": {
+    "graceful-fs": "^4.2.10"
   },
   "repository": {
     "type": "git",
